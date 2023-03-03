@@ -42,6 +42,7 @@ console.groupEnd();
     function areaTriangulo(base, altura) {
     return (base * altura / 2);
     }
+
     console.groupEnd();
 
 //codigo del triangulo
@@ -103,6 +104,9 @@ function calcularPerimetroTriangulo(){
     const value3 = Number(base.value);
     const perimetro = perimetroTriangulo(value1,value2,value3);
     alert("El perimetro del triangulo es: " + perimetro);
+
+    const area = areaTriangulo(value1,value2,value3);
+    alert("El area del triangulo es: " + area);    
 }
 
 function calcularAreaTriangulo(){
