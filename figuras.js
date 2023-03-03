@@ -109,6 +109,16 @@ function calcularPerimetroTriangulo(){
     alert("El area del triangulo es: " + area);    
 }
 
+//function calcularAreaTriangulo(){
+    //const input1 = document.getElementById("InputTriangulo1");
+    //const value1 = Number(input1.value);
+    //const input2 = document.getElementById("InputTriangulo2");
+    //const value2 = Number(input2.value);
+    //const base = document.getElementById("InputBaseTriangulo");
+    //const value3 = Number(base.value);
+    //const area = areaTriangulo(value1,value2,value3);
+    //alert("El area del triangulo es: " + area);
+//} 
 function calcularAreaTriangulo(){
     const input1 = document.getElementById("InputTriangulo1");
     const value1 = Number(input1.value);
