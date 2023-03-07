@@ -126,6 +126,6 @@ function calcularAreaTriangulo(){
     const value2 = Number(input2.value);
     const base = document.getElementById("InputBaseTriangulo");
     const value3 = Number(base.value);
-    const area = areaTriangulo(value1,value2,value3);
+    const area = areaTriangulo((value3 * value1) % 2);
     alert("El area del triangulo es: " + area);
 }
