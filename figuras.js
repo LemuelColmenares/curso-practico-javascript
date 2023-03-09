@@ -1,58 +1,29 @@
 //codigo del cuadrado
 console.group("cuadrados")
-//const ladoCuadrado= 5;
-  //  console.log("Los lados del cuadrado miden: " + ladoCuadrado + "cm");
-
 function perimetroCuadrado(lado){
     return lado * 4;
-
 } 
-    //console.log("El perimetro del cuadrado mide: " + perimetroCuadrado + "cm");
-
 
 function areaCuadrado (lado) {
     return lado * lado;
 }
-//   console.log("El area del cuadrado mide: " + areaCuadrado + "cm^2");
 console.groupEnd();
 
 
     //codigo del triangulo
     console.group("Triangulo")
-//const ladoTriangulo1= 6;
-//const ladoTriangulo2 = 6;
-//const baseTriangulo = 4;
-//console.log(
-//    "Los lados del triangulo miden: " 
-//    + ladoTriangulo1 + 
-//    "cm, " + 
-//    ladoTriangulo2 + 
-//    "cm, " + baseTriangulo + 
-//    "cm"
-//    );
-
-//    const alturaTriangulo = 5.5;
-//    console.log("La altura del traingulo es de: " + alturaTriangulo);
-
     function perimetroTriangulo(lado1, lado2, base) {
         return lado1 + lado2 + base;
     }
-    //console.log("El perimetro del triangulo mide: " + perimetroTriangulo + "cm");
 
     function areaTriangulo(base, altura) {
     return (base * altura / 2);
     }
-
     console.groupEnd();
 
 //codigo del triangulo
 console.group("Circulo");
 
-
-    //Radio
-//const radioCirculo = 4;
-//console.log("El radio del circulo es:" + radioCirculo + "cm");
-  
 //Diametro
 function diametroCirculo(radio){
     return radio * 2;
@@ -111,13 +82,25 @@ function calcularPerimetroTriangulo(){
     }    
 }
 
-//function calcularAreaTriangulo(){
-    //const input1 = document.getElementById("InputTriangulo1");
-    //const value1 = Number(input1.value);
-    //const input2 = document.getElementById("InputTriangulo2");
-    //const value2 = Number(input2.value);
-    //const base = document.getElementById("InputBaseTriangulo");
-    //const value3 = Number(base.value);
-    //const area = areaTriangulo(value1,value2,value3);
-    //alert("El area del triangulo es: " + area);
-//} 
+
+function triangulo2(){
+    let lado1 = document.getElementById("tLado1");
+    let tLado1 = parseFloat(lado1.value);
+
+    let lado2 = document.getElementById("tLado2");
+    let tLado2 = parseFloat(lado2.value);
+
+    let base = document.getElementById("tBase");
+    let tBase = parseFloat(base.value);
+
+    let altura = document.getElementById("tAltura");
+    let tAltura = parseFloat(altura.value);
+    
+    let tPerimetro = tLado1 + tLado2 + tBase;
+    let tArea = (tBase*tAltura)/2;
+
+    alert(`El perímetro del triangulo es: ${tPerimetro}cm y el área es de ${tArea}cm^2`);
+
+}
+
+trinagulo(6, 6, 4, 5.5);
